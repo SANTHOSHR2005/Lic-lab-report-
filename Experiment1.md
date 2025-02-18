@@ -1,4 +1,4 @@
-# Experiment: Common Source Amplifier in LTspice  
+![image](https://github.com/user-attachments/assets/2b771e74-5486-4bf7-88b6-bac56833c34a)# Experiment: Common Source Amplifier in LTspice  
 
 ## Objective  
 To design and analyze a common source amplifier using an NMOS transistor in LTspice and study its DC, AC, and transient response.  
@@ -10,6 +10,7 @@ To design and analyze a common source amplifier using an NMOS transistor in LTsp
 - AC signal source (SINE 0.9V, 50mV, 1kHz)  
 
 ## Theory  
+
 
 ### NMOS Transistor Operation  
 An NMOS transistor is a type of MOSFET where the majority charge carriers are electrons. It has three terminals: gate, drain, and source. The transistor operates in three regions:  
@@ -29,6 +30,10 @@ In this circuit, the NMOS transistor is configured as a common source amplifier.
 - The voltage gain depends on the transistor's transconductance and drain resistance.  
 - Proper biasing ensures the MOSFET remains in the saturation region for linear amplification.  
 
+
+![image](https://github.com/user-attachments/assets/bdc2b719-7338-4dd7-b886-ade38aad8966)
+
+
 ## Procedure  
 1. Open LTspice and create a new schematic.  
 2. Add the NMOS transistor, resistor, DC voltage source, and AC signal source with appropriate values.  
@@ -39,6 +44,21 @@ In this circuit, the NMOS transistor is configured as a common source amplifier.
 6. Execute transient analysis to visualize the amplifier's response over time.  Take .trans 5m
 7. Analyze the output waveform to verify amplification.  
 
+## Observation
+DC ANALYSIS 
+
+![image](https://github.com/user-attachments/assets/6029cd21-a98c-4218-be8d-06b9839323ad)
+
+AC ANALYSIS
+
+![image](https://github.com/user-attachments/assets/a24e67a4-7640-4344-a8dd-6f5f1a97cada)
+
+
+Transient analysis 
+
+![image](https://github.com/user-attachments/assets/c517f318-ff9b-4c6e-b7a6-c1e45b05f809)
+
+ 
 ## Inference  
 
 1. DC Analysis determines the operating point of the MOSFET and ensures the transistor is in the correct region for amplification. The correct choice of gate voltage and resistor values is crucial for biasing.  
@@ -49,3 +69,6 @@ Parametres used
 DC Analysis	Finds biasing conditions, DC voltages and currents	.op
 AC Analysis	Finds gain vs frequency, bandwidth, cutoff frequency	.ac dec 20 0.1 1T
 Transient Analysis	Finds time-domain response, waveform behavior	.tran 5m 
+
+
+
