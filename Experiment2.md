@@ -110,12 +110,6 @@ For optimal operation, MOSFETs must remain in the saturation region rather than 
 
 - Examine gain and bandwidth characteristics.
 
-### Gain Calculation
-\[
-\text{Gain} = \frac{V_{out}}{V_{in}} = \frac{1.32}{1.25} = 1.056
-\]
-
----
 
 ## Results
 ### Circuit-1 (Resistor-Biased Design)
